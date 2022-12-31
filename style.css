@@ -1,0 +1,230 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body
+{
+    background: #fff;
+}
+section
+{
+    position: relative;
+    padding: 100px;
+}
+.header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header .logo h2
+{
+    color: #fff;
+    text-decoration-color: #fff;
+    text-decoration:#fff;
+    font-size: 1.2em;
+}
+
+.header .toggle img
+{
+    max-width: 40px;
+    cursor: pointer;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transperent);
+
+}
+.banner .content
+{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+.banner .content h2
+{
+    color: #fff;
+    font-size: 5em;
+}
+.banner .content p
+{
+    color: #fff;
+    font-size: 1.25em;
+
+}
+.btn
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+}
+.fitBg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.maldives
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maldives .contentBx
+{
+    min-width: 50%;
+    width: 50%;
+    text-align:left;
+    padding-right: 40px;
+}
+.titleText
+{
+    font-weight: 600;
+    color:black;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.maldives .imgBx
+{
+    position: relative;
+    min-width: 50%;
+    width: 50%;
+    min-height: 500px;
+}
+.maldives .contentBx .btn
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: rgb(142, 204, 255);
+    color: #fff;
+    text-decoration: none;
+}
+.destinations
+{
+    text-align: center;
+}
+.destinations .content
+{
+    text-align: center;
+}
+.destinations .destinationList
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.destinations .destinationList .box
+{
+    position: relative;
+    min-width: 350px;
+    height: 480px;
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+    margin: 10px;
+}
+.destinations .destinationList:hover .box
+{
+    opacity: 0.2;
+}
+.destinations .destinationList .box:hover
+{
+    opacity: 1;
+}
+.destinations .destinationList .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.destinations .destinationList .box .content
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinations .destinationList .box .content h2
+{
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.destinations .destinationList .box .content h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.destinations .btn
+{
+    background: rgba(0, 0, 0, 0.63);
+    color: #fff;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .socials
+{
+    position: relative;
+    display: flex;
+}
+.footer .socials li
+{
+    list-style: none;
+}
+.footer .socials li a
+{
+    text-decoration: none;
+    margin: 0 20px;
+}
+.footer .socials li a img
+{
+    max-width: 40px;
+}
